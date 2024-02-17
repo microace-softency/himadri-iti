@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "xeena-97be9",
+    "production": "xeena-e2ea0"
+  },
+  "targets": {},
+  "etags": {}
+}
