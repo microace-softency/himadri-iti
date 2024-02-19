@@ -70,7 +70,7 @@ const NewsFeed = () => {
 
   return (
     <div className="news-feed-container-parent">
-      <h2>News Feed</h2>
+      <h2 style={{display:"flex", justifyContent:"center", color:"red"}}>Notice</h2>
       <div
         className="news-feed-container"
         style={{ width: "400px", height: "500px" }}
@@ -81,35 +81,35 @@ const NewsFeed = () => {
         <div>
           {/* {newsData.map((news, i) => ( */}
             <div className="news-item">
-              <h4>News 1</h4>
+              <h4>01/02/2024</h4>
               <p>wdfhbvi</p>
             </div>
             <div className="news-item">
-              <h4>News 2</h4>
+              <h4>03/12/2023</h4>
               <p>wdfhbvi</p>
             </div>
             <div className="news-item">
-              <h4>News 3</h4>
+              <h4>12/09/2023</h4>
               <p>wdfhbvi</p>
             </div>
             <div className="news-item">
-              <h4>News 4</h4>
+              <h4>25/12/2023</h4>
               <p>wdfhbvi</p>
             </div>
             <div className="news-item">
-              <h4>News 5</h4>
+              <h4>12/10/2023</h4>
               <p>wdfhbvi</p>
             </div>
             <div className="news-item">
-              <h4>News 6</h4>
+              <h4>18/05/2023</h4>
               <p>wdfhbvi</p>
             </div>
             <div className="news-item">
-              <h4>News 7</h4>
+              <h4>30/05/2023</h4>
               <p>wdfhbvi</p>
             </div>
             <div className="news-item">
-              <h4>News 8</h4>
+              <h4>08/08/2023</h4>
               <p>wdfhbvi</p>
             </div>
             <div className="news-item">

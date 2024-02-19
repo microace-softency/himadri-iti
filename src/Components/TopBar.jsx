@@ -20,7 +20,8 @@ function TopBar() {
                             </Col>
                             <Col md={8} >
                                 <div className="ps-4 d-sm-none d-lg-block">
-                                    <h2 className="text-title m-none text-center">HIMADRI TECHNICALM TRAINING INSTITUTE</h2>
+                                    <h2 className="text-title m-none text-center">HIMADRI TECHNICAL TRAINING </h2>
+                                    <h2 className="text-title m-none text-center">INSTITUTE</h2>
                                 </div>
                             </Col>
                             <Col sm={6} md={2}>

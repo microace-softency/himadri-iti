@@ -35,10 +35,10 @@ function Home() {
 
     return (
 
-        <div> 
+        <Row> 
             <section id="">
                 <Container>
-                    <Row className="p-2">
+                    <Row className="md:p-2 xs:-m-2">
                         <Col sm={12} md={12}>
                             <AppCarousel props={carouselData} />
                         </Col>
@@ -95,6 +95,7 @@ function Home() {
                                         </li>
                                     </ol>
                                 </Col>
+                                <br/><br/>
                             </Row>
                         </Col>
                         <Col sm={12} md={4}>
@@ -102,12 +103,13 @@ function Home() {
                         </Col>
                         <Col style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
                             <h4>OUR LEARNING OPPORTUNITY</h4>
+                            <br/>
                                 <Opportunity/>
                         </Col>
                     </Row>
                 </Container>
             </section>
-            <section id="forms">
+            {/* <section id="forms">
                 <Container>
                     <Row className="p-2">
                         <Col sm={6} lg={4}>
@@ -134,7 +136,7 @@ function Home() {
                         </Col>
                     </Row>
                 </Container>
-            </section>
+            </section> */}
             <section id="events">
                 <Container>
                     <Row className="p-2">
@@ -144,7 +146,7 @@ function Home() {
                     </Row>
                 </Container>
             </section>
-        </div>
+        </Row>
     )
 }
 export default Home;

@@ -80,9 +80,9 @@ const EventComponent = () => {
   };
 
   return (
-    <div className='event-component-container-parent'>
-      <h2>Events</h2>
-
+    <div className='event-component-container-parent mb-5'>
+      <h2 style={{display:"flex", justifyContent:"center"}}>Events</h2>
+      <br/>
       <div
         className="event-component-container"
         style={{ width: '100%', height: '300px' }}
@@ -90,13 +90,25 @@ const EventComponent = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div className="event-component-content shadow-gray-400" ref={contentRef}>
+        <div className="event-component-content shadow-gray-400 " ref={contentRef}>
           {/* {eventData.map((event) => ( */}
             <div className="event-item">
-              <img className='event-item' src="logoIcon.png" alt='' />
+              <img className='event-item' src="event-1.avif" alt='' />
             </div>
             <div className="event-item">
-              <img className='event-item' src="logoIcon.png" alt='' />
+              <img className='event-item' src="event-2.jpg" alt='' />
+            </div>
+            <div className="event-item">
+              <img className='event-item' src="event-3.png" alt='' />
+            </div>
+            <div className="event-item">
+              <img className='event-item' src="event-4.webp" alt='' />
+            </div>
+            <div className="event-item">
+              <img className='event-item' src="event-5.jpg" alt='' />
+            </div>
+            <div className="event-item">
+              <img className='event-item' src="event-6.jpg" alt='' />
             </div>
           {/* ))} */}
         </div>
