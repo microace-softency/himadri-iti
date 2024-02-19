@@ -13,10 +13,10 @@ function AppCarousel({props}) {
                 alt={item.title}
                 />
             </Ratio>
-            {/* <Carousel.Caption>
+            <Carousel.Caption>
             <h5>{item.title}</h5>
             <p>{item.des}</p>
-            </Carousel.Caption> */}
+            </Carousel.Caption>
         </Carousel.Item>
         ))}
     </Carousel>

@@ -4,31 +4,32 @@ import { Col, Container, Row } from "react-bootstrap";
 import NewsFeed from "../Components/NewsFeed";
 import EventComponent from "../Components/Events";
 import Opportunity from "../Components/Opportunity";
+import CustomerReviewSlider from "../Components/CustomerReviewSlider";
 
 function Home() {
     const carouselData = [
         {
             id: '1',
-            title: 'First Carousel',
-            des: 'carousel 1 description',
+            // title: 'First Carousel',
+            // des: 'carousel 1 description',
             src: './carousel/slider-i.jpg'
         },
         {
             id: '2',
-            title: '2nd Carousel',
-            des: 'carousel 2 description',
+            // title: '2nd Carousel',
+            // des: 'carousel 2 description',
             src: './carousel/slider-ii.jpg'
         },
         {
             id: '3',
-            title: '3rd Carousel',
-            des: 'carousel 3 description',
+            // title: '3rd Carousel',
+            // des: 'carousel 3 description',
             src: './carousel/slider-iii.jpg'
         },
         {
             id: '4',
-            title: '4th Carousel',
-            des: 'carousel 4 description',
+            // title: '4th Carousel',
+            // des: 'carousel 4 description',
             src: './carousel/slider-iv.jpg'
         },
     ]
@@ -144,6 +145,15 @@ function Home() {
                             <EventComponent />
                         </Col>
                     </Row>
+                    <Row className="p-2">
+                        <Col md={12}>
+                        <h4  style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>WHAT STUDENTS SAY ABOUT US</h4>
+                        <br/>
+                         <CustomerReviewSlider/>
+                        </Col>
+                    </Row>
+                    <br/>
+
                 </Container>
             </section>
         </Row>
