@@ -8,7 +8,7 @@ const CustomerReviewSlider = () => {
       id: '1',
       name: 'Alice Johnson',
       rating: 4.2,
-      comment: 'I had a great experience with the hotel. The staff was friendly and the facilities were top-notch.',
+      comment: 'I had a great experience with the hotel. The staff was friendly and the facilities were top-notch comfortable.',
     },
     {
       id: '2',
@@ -39,6 +39,18 @@ const CustomerReviewSlider = () => {
       name: 'Sophia Miller',
       rating: 3.2,
       comment: 'A decent stay overall. The location is convenient, and the rooms are adequately furnished.',
+    },
+    {
+      id: '5',
+      name: 'Sophia Miller',
+      rating: 3.2,
+      comment: 'A decent stay overall. The location is convenient, and the rooms are adequately furnished.',
+    },
+    {
+      id: '6',
+      name: 'Sophia Miller',
+      rating: 3.2,
+      comment: 'A decent stay overall. The location is convenient, and the rooms are adequately furnished.',
     }
   ];
 
@@ -54,8 +66,10 @@ const CustomerReviewSlider = () => {
       {groupedData.map((pair, index) => (
         <Carousel.Item key={index}>
           <div className="d-flex justify-content-around">
-            {pair.map((review) => (
-              <CustomerRevewCard key={review.id} name={review.name} rating={review.rating} comment={review.comment} />
+            {pair.map((review, innerIndex) => (
+              <div key={innerIndex} style={{ marginLeft: innerIndex === 1 ? '2px' : '0' }}>
+                <CustomerRevewCard name={review.name} rating={review.rating} comment={review.comment} />
+              </div>
             ))}
           </div>
         </Carousel.Item>

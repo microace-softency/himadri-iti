@@ -11,7 +11,7 @@ function TopBar() {
             <div className="container">
                 <div className="py-2">
                     <div className="d-none d-sm-block">
-                        <Row className="mb-2">
+                        <Row className="mb-2" style={{alignItems:"center"}}>
                             <Col sm={6} md={2} >
                                 <div className="mt-2 w-100 d-flex flex-column h-100">
                                     <div><Logo style={{ height: '60px' }} /></div>
@@ -19,10 +19,10 @@ function TopBar() {
                                 </div>
                             </Col>
                             <Col md={8} >
-                                <div className="ps-4 d-sm-none d-lg-block">
-                                    <h2 className="text-title m-none text-center">HIMADRI TECHNICAL TRAINING </h2>
-                                    <h2 className="text-title m-none text-center">INSTITUTE</h2>
-                                </div>
+                                {/* <div className="ps-4 d-sm-none d-lg-block"> */}
+                                    <h2 className="text-title m-none text-center">HIMADRI TECHNICAL TRAINING INSTITUTE</h2>
+                                    {/* <h2 className="text-title m-none text-center">INSTITUTE</h2> */}
+                                {/* </div> */}
                             </Col>
                             <Col sm={6} md={2}>
                                 <LogoSecondary style={{ height: '90px', width: '90px' }} />

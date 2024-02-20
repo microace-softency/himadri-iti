@@ -64,7 +64,19 @@ function AppFooter() {
     <footer className="bg-dark text-white py-4">
       <Container>
         <Row>
-          <Col md={3} sm={6}>
+          <Col md={4} sm={6}>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3673.5139658292146!2d88.46417487591097!3d22.968120318356902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1708416412562!5m2!1sen!2sin" width="400" height="250" style={{border:"0", borderRadius:"7px"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+          </Col>
+          {/* 
+            <Col md={3} sm={6}>
+              <h5>Visit us </h5>
+              <p className="text-p1">
+                Plot No D-19/12,<br />
+                Kalyani, Nadia-741235
+              </p>
+            </Col> */}
+          <Col md={4} sm={6}>
             <h5>Follow us on</h5>
             <div className="follow-links py-2 color-red">
               <a href="">
@@ -77,16 +89,14 @@ function AppFooter() {
                 <BsInstagram />
               </a>
             </div>
-          </Col>
-
-          <Col md={4} sm={6}>
+            <br/>
             <h5>Visit us </h5>
-            <p className="text-p1">
-              Plot No D-19/12,<br />
-              Kalyani, Nadia-741235
-            </p>
+              <p className="text-p1">
+                Plot No D-19/12,<br />
+                Kalyani, Nadia-741235
+              </p>
           </Col>
-          <Col md={5} sm={12}>
+          <Col md={4} sm={12}>
             <h5>Contact Us</h5>
             <Form onSubmit={handleSubmit}>
               <Row>
@@ -143,6 +153,7 @@ function AppFooter() {
             </Form>
           </Col>
         </Row>
+       
         <hr />
         <div className="d-flex justify-content-center">
           <a href="#home" className="text-p1 text-decoration-none">© Himadri.co.in</a>

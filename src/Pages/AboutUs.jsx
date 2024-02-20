@@ -6,28 +6,16 @@ function AboutUs() {
   const carouselData = [
     {
       id: "1",
-      title: "First Carousel",
-      des: "carousel 1 description",
+      // title: "First Carousel",
+      // des: "carousel 1 description",
       src: "student-1.jpg",
     },
     {
       id: "2",
-      title: "2nd Carousel",
-      des: "carousel 2 description",
+      // title: "2nd Carousel",
+      // des: "carousel 2 description",
       src: "student-2.jpg",
     },
-    // {
-    //   id: "3",
-    //   title: "3rd Carousel",
-    //   des: "carousel 3 description",
-    //   src: "./carousel/slider-iii.jpg",
-    // },
-    // {
-    //   id: "4",
-    //   title: "4th Carousel",
-    //   des: "carousel 4 description",
-    //   src: "./carousel/slider-iv.jpg",
-    // },
   ];
   return (
     <div>

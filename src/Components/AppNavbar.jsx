@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavDropdown } from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import "../App.css"
 
 function AppNavbar() {
   const [isFixed, setIsFixed] = useState(false)
@@ -41,7 +42,7 @@ function AppNavbar() {
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ marginLeft: 'auto' }} />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="d-flex justify-content-around w-100">
+            <Nav className="d-flex justify-content-around w-100" style={{fontSize:"20px", color:"white"}}>
               <Nav.Link as={Link} to="/"
                 className={({ isActive }) =>
                   isActive ? "active" : ""
