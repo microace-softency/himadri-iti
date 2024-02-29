@@ -81,7 +81,7 @@ const EventComponent = () => {
 
   return (
     <div className='event-component-container-parent mb-5'>
-      <h2 style={{display:"flex", justifyContent:"center"}}>Events</h2>
+      <h2 style={{display:"flex", justifyContent:"center"}}>EVENTS</h2>
       <br/>
       <div
         className="event-component-container"

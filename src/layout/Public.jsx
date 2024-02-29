@@ -30,7 +30,7 @@ const Public = ({ children }) => {
         <TopBar />
         <AppNavbar />
       </header>
-      <main className={`main-layout py-1 ${isFixed ? 'top-padding' : ''}`} style={{background:"#ff000021"}}>{children}</main>
+      <main className={`main-layout py-1 ${isFixed ? 'top-padding' : ''}`} >{children}</main>
       <footer className="bg-secondary">
         <AppFooter />
       </footer>

@@ -140,7 +140,7 @@
 
   &::before {
     border-top: 0.2em solid red;
-    border-bottom: 0.2em solid red;
+    border-bottom: 0.2em solid red;                                                                                                                                   
     transform: scale3d(0,1,1);
   }
 
@@ -158,4 +158,7 @@
 }
 .carousel-indicators{
   bottom: -45px !important;
+}
+.about-box{
+  box-shadow: -19px 24px 26px -20px rgba(0,0,0,0.72);
 }

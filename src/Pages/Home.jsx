@@ -5,8 +5,10 @@ import NewsFeed from "../Components/NewsFeed";
 import EventComponent from "../Components/Events";
 import Opportunity from "../Components/Opportunity";
 import CustomerReviewSlider from "../Components/CustomerReviewSlider";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+    const navigate = useNavigate()
     const carouselData = [
         {
             id: '1',
@@ -34,26 +36,43 @@ function Home() {
         },
     ]
 
+    const aboutData = [
+        {
+            id: '4',
+            // title: '4th Carousel',
+            // des: 'carousel 4 description',
+            src: './carousel/slider-iv.jpg'
+        },
+    ]
+
     return (
 
         <Row> 
             <section id="">
-                <Container>
+                <Container style={{maxWidth:"none", marginBottom:"15px"}}>
                     <Row className="md:p-2 xs:-m-2">
-                        <Col sm={12} md={12}>
+                        <Col sm={12} md={12} style={{paddingRight:"none !important", paddingLeft:"none !important"}}>
                             <AppCarousel props={carouselData} />
                         </Col>
                     </Row>
                 </Container>
+            <br></br>
+            <br></br>
+            <br></br>
+
             </section>
             <section id="about">
                 <Container>
                     <Row className="p-2">
-                        <Col sm={12} md={8}>
-                            <Row>
-                                <h2>About us</h2>
+                        <Col sm={12} md={12 }>
+                            <Row style={{alignItems:"center"}}>
+                                <Col md={6}  className="py-2 " style={{alignItems:"center", justifyContent:"center"}}>
+                                    <img className="about-box" style={{height:"333px", width:"95%", borderRadius:"15px"}} src="./carousel/slider-iv.jpg"/>
+                                    {/* <AppCarousel props={aboutData}/> */}
+                                </Col>
                                 <Col md={6} className="py-2">
-                                    <h4>Who we are</h4>
+                                <h5>About us</h5>
+                                <h3 style={{color:"red"}}>Who we are</h3>
                                     <p>HIMADRI TECHNICALM TRAINING INSTITUTE has been set up to promote the technological
                                         and professional institution of high standards and to encourage skill development
                                         training activities so that the students, conferred to the degree can not only the
@@ -62,20 +81,9 @@ function Home() {
                                         advancement our effort is to put quality education in the light of tomorrow’s vision
                                         of spreading education throughout the society.
                                     </p>
+                                    <button style={{background:"#9d0303", border:"none", borderRadius:"5px", boxShadow:"5px solid black", color:"white"}} onClick={()=>navigate('/about')}>Learn More</button>
                                 </Col>
-                                <Col md={6} className="py-2">
-                                    <h4>WHY HIMADRI?</h4>
-                                    <ul>
-                                        <li>Five days in a week training shift wise.</li>
-                                        <li>Laboratory & Class-room Based training.</li>
-                                        <li>Computer classes & Library session.</li>
-                                        <li>Audio Visual Classes. WIFI Campus.</li>
-                                        <li>Clinical Practice at Govt. Hospital.</li>
-                                        <li>Hostel & Canteen Facilities.</li>
-                                        <li>Assured Placement.</li>
-                                    </ul>
-                                </Col>
-                                <Col md={12} className="py-2">
+                                {/* <Col md={12} className="py-2">
                                     <h4>Our Goal</h4>
                                     <ol>
                                         <li>
@@ -95,15 +103,18 @@ function Home() {
                                             Ensure that all students receive the same standards-based evaluation, grades 1 through 12 and university education, also to ensure that a small number of exceptional needs for students must be addressed using appropriate alternative means to determine achievement and progress for all.Evaluation: Ensure that all students receive the same standards-based evaluation, grades 1 through 12 and university education, also to ensure that a small number of exceptional needs for students must be addressed using appropriate alternative means to determine achievement and progress for all.
                                         </li>
                                     </ol>
-                                </Col>
-                                <br/><br/>
+                                </Col> */}
                             </Row>
                         </Col>
-                        <Col sm={12} md={4}>
+                        {/* <Col sm={12} md={4}>
                             <NewsFeed />
-                        </Col>
+                        </Col> */}
                         <Col style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
-                            <h4>OUR LEARNING OPPORTUNITY</h4>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+
+                            <h2>OUR LEARNING OPPORTUNITY</h2>
                             <br/>
                                 <Opportunity/>
                         </Col>
@@ -147,7 +158,7 @@ function Home() {
                     </Row>
                     <Row className="p-2">
                         <Col md={12}>
-                        <h4  style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>WHAT STUDENTS SAY ABOUT US</h4>
+                        <h2  style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>WHAT STUDENTS SAY ABOUT US</h2>
                         <br/>
                          <CustomerReviewSlider/>
                         </Col>

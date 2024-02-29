@@ -7,14 +7,14 @@ import { Rating } from '@mui/material';
 
 const CustomerRevewCard = ({ name, rating, comment }) => {
   return (
-    // <Card
-    //   sx={{
-    //     width: '100%',
-    //     maxWidth: '100%',
-    //     boxShadow: 'lg',
-    //     height:'20%',
-    //   }}
-    // >
+    <Card
+      sx={{
+        width: '100%',
+        maxWidth: '100%',
+        boxShadow: 'lg',
+        height:'20%',
+      }}
+    >
       <CardContent sx={{ alignItems: 'center', textAlign: 'center' , height:"20vh"}}>
         <Avatar src="/static/images/avatar/1.jpg" sx={{ '--Avatar-size': '4rem' }} />
         <Typography level="title-lg">{name}</Typography>
@@ -23,7 +23,7 @@ const CustomerRevewCard = ({ name, rating, comment }) => {
           {comment}
         </Typography>
       </CardContent>
-    // </Card>  
+      </Card>  
   );
 };
 

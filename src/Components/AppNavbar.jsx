@@ -55,12 +55,6 @@ function AppNavbar() {
                 className={({ isActive }) =>
                   isActive ? "active" : ""
                 }>Courses</Nav.Link>
-              <NavDropdown title="Admission" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#process">Process of Admission</NavDropdown.Item>
-                <NavDropdown.Item target="_blank">Online Form</NavDropdown.Item>
-                {/* <NavDropdown.Item href="admissionForm" target="_blank">Online Form</NavDropdown.Item> */}
-                {/* <NavDropdown.Item onClick={handleDownloadPDF}>Prospectus</NavDropdown.Item> */}
-              </NavDropdown>
               <Nav.Link as={Link} to="/events"
                 className={({ isActive }) =>
                   isActive ? "active" : ""

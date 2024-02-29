@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import CustomerRevewCard from './CustomerRevewCard';
 
@@ -54,24 +54,23 @@ const CustomerReviewSlider = () => {
     }
   ];
 
-  const groupedData = customerReviewData.reduce((acc, curr, index, array) => {
-    if (index % 2 === 0) {
-      acc.push(array.slice(index, index + 2));
-    }
-    return acc;
-  }, []);
+ 
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
 
   return (
-    <Carousel>
-      {groupedData.map((pair, index) => (
-        <Carousel.Item key={index}>
-          <div className="d-flex justify-content-around">
-            {pair.map((review, innerIndex) => (
-              <div key={innerIndex} style={{ marginLeft: innerIndex === 1 ? '2px' : '0' }}>
-                <CustomerRevewCard name={review.name} rating={review.rating} comment={review.comment} />
-              </div>
-            ))}
-          </div>
+    <Carousel activeIndex={index} onSelect={handleSelect}>
+      {customerReviewData.map((review, idx) => (
+        <Carousel.Item key={idx}>
+          <CustomerRevewCard
+            name={review.name}
+            rating={review.rating}
+            comment={review.comment}
+          />
         </Carousel.Item>
       ))}
     </Carousel>
