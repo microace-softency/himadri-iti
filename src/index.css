@@ -5,7 +5,8 @@ body {
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Playfair Display", serif;
+  font-family: "Merriweather", serif;
+
 
   
 }
@@ -100,3 +101,7 @@ main {
   padding-left: calc(var(--bs-gutter-x)* .15) !important;
   margin-top: var(--bs-gutter-y);
 } */
+.sparkle{
+  box-shadow: 10px 10px 20px -2px rgba(0,0,0,0.27);
+
+}

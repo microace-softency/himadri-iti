@@ -71,8 +71,8 @@ function Home() {
                                     {/* <AppCarousel props={aboutData}/> */}
                                 </Col>
                                 <Col md={6} className="py-2">
-                                <h5>About us</h5>
-                                <h3 style={{color:"red"}}>Who we are</h3>
+                                <h5>ABOUT US</h5>
+                                <h2 style={{color:"red"}}>Who we are</h2>
                                     <p>HIMADRI TECHNICALM TRAINING INSTITUTE has been set up to promote the technological
                                         and professional institution of high standards and to encourage skill development
                                         training activities so that the students, conferred to the degree can not only the
@@ -113,7 +113,7 @@ function Home() {
                         <br></br>
                         <br></br>
                         <br></br>
-
+                                <h4 style={{color:"red"}}>subject</h4>
                             <h2>OUR LEARNING OPPORTUNITY</h2>
                             <br/>
                                 <Opportunity/>

@@ -10,7 +10,7 @@ import Opportunity from '../Components/Opportunity'
 
 function Courses() {
 
-  const [coursesData, setCoursesData] = useState([]); // Rename to coursesData
+  const [coursesData, setCoursesData] = useState([]); 
 
 
   useEffect(() => {

@@ -12,10 +12,11 @@ const CustomerRevewCard = ({ name, rating, comment }) => {
         width: '100%',
         maxWidth: '100%',
         boxShadow: 'lg',
-        height:'20%',
+        height:'50%',
+        boxShadow:'10px 10px 47px 17px rgba(0,0,0,0.53)'
       }}
     >
-      <CardContent sx={{ alignItems: 'center', textAlign: 'center' , height:"20vh"}}>
+      <CardContent sx={{ alignItems: 'center', textAlign: 'center' , height:"30vh", boxShadow:'inset 10px 10px 47px 17px rgba(0,0,0,0.53)'}}>
         <Avatar src="/static/images/avatar/1.jpg" sx={{ '--Avatar-size': '4rem' }} />
         <Typography level="title-lg">{name}</Typography>
         <Rating name="half-rating" defaultValue={rating} precision={0.5} />
